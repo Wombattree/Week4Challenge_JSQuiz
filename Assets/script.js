@@ -263,7 +263,7 @@ function DisplayHighScores()
 
     thereAreNoHighScoresElement.textContent = highScores.length === 0 ? "There are no high scores, why are you here?" : "";
 
-    for (let i = 0; i < highScores.length; i++) 
+    for (let i = 0; i < Math.min(10, highScores.length); i++) 
     {
         let newLi = document.createElement("li");
         newLi.textContent = highScores[i].initials + ": " + highScores[i].score;
