@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Javascript Quiz</title>
+
+    <link rel="stylesheet" href="assets/reset.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+</head>
+
+<body>
+    <div class="mainBody">
+
+        <header> <h1>Javascript Quiz</h1> </header>
+
+        <div id="mainScreen" class="card hide">
+
+            <div class="cardTitle">
+                <h2>Welcome to the quiz, answer some questions, learn some things, defeat your foes, win amazing prizes!*</h2>
+                <p id="disclaimerText">*prizes might not actually exist, neither Alex Scrivener nor the University of Adelaide can be held liable for the absence of prizes. But taking this quiz you consent to having your information used for nefarious purposes and/or schemes.</p>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="cardContent">
+                <button id="startQuizButton">Start Quiz</button>
+            </div>
+
+        </div>
+
+        <div id="quizScreen" class="card hide">
+
+            <div class="cardTitle"> <h2 id="quizQuestion"></h2> </div>
+
+            <div class="cardContent"> <ol id="quizOptions"></ol> </div>
+            <div class="cardContent"> <p id="quizResponse"></p> </div>
+            <div class="cardContent"> <p id="quizScore">Current score: </p> </div>
+            <div class="cardContent"> <p id="timer"></p> </div>
+
+        </div>
+
+        <div id="enterHighScoreScreen" class="card hide">
+
+            <div class="cardTitle"> <h2 id="gameOverTitle">Game Over! Please enter your initials for the leaderboard:</h2> </div>
+
+            <div class="cardContent"> <p id="displayScoreAtGameOver"></p> </div>
+
+            <div class="cardContent">
+                <form id="enterHighScoreForm" method="POST">
+                    <label for="enterInitialsText">Enter your initials: </label>
+                    <input type="text" placeholder="My initials are..." name="enterInitialsText" id="enterInitialsText" maxlength="3" onkeyup="this.value = this.value.toUpperCase()";/>
+                </form>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="cardContent"> <button id="submitHighScoreButton">Submit</button> </div>
+            <div class="cardContent"> <button id="skipSubmittingHighScoreButton">Skip</button> </div>
+
+        </div>
+
+        <div id="displayHighScoreScreen" class="card hide">
+
+            <div class="cardTitle"> <h2>Highscores:</h2> </div>
+
+            <div class="cardContent"> 
+                <p id="thereAreNoHighScores"></p>
+                <ol id="highScoreList"></ol>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="cardContent"> <button id="playAgainButton">Play Again</button> </div>
+            <div class="cardContent"> <button id="clearHighScoresButton">Clear High Scores</button> </div>
+
+        </div>
+    </div>
+
+    <button id="returnToMenuButton">Return To Menu</button>
+    <button id="viewHighScoresButton">View High Scores</button>
+
+    <footer> <p>Made by Alex Scrivener for the University of Adelaide Web Development boot camp</p></footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+:root
+{
+    --bodyColour: rgb(32, 32, 35);
+    --blueColour: rgb(15, 59, 74);
+
+    --textColour: #dddddd;
+    --fadedTextColour: grey;
+
+    --borderRadius: 5px;
+
+    background-color: var(--bodyColour);
+    color: var(--textColour);
+}
+
+body
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button
+{
+    padding: 0.25% 2% 0.25% 2%;
+    display: block;
+    background-color: var(--blueColour);
+    color: #dddddd;
+    border: 0px;
+    border-radius: var(--borderRadius);
+}
+
+h1
+{
+    font-size: 250%;
+    padding-bottom: 5%;
+}
+
+h2
+{
+    font-size: 125%;
+    font-weight: normal;
+    padding-bottom: 1%;
+}
+
+ol
+{
+    list-style: lower-alpha;
+    list-style-position: inside;
+}
+
+li
+{
+    padding: 1% 0% 1% 2%;
+    margin: 0.5% 0% 0.5% 0%;
+    background-color: var(--blueColour);
+    border-radius: var(--borderRadius);
+}
+
+footer
+{
+    font-size: 75%;
+    padding: 0% 20% 2% 20%;
+    position: fixed;
+    bottom: 0px;
+    color: var(--fadedTextColour);
+}
+
+.mainBody
+{
+    padding: 2% 20% 0% 20%;
+}
+
+.cardTitle, .cardContent
+{
+    padding: 1% 0% 1% 0%;
+}
+
+.questionOption
+{
+    cursor: pointer;
+}
+
+.separator
+{
+    padding: 2% 0% 2% 0%;
+}
+
+.display
+{
+    display: inline;
+}
+
+.hide
+{
+    display: none;
+}
+
+#disclaimerText
+{
+    padding-top: 1%;
+    font-size: 60%;
+    color: var(--fadedTextColour);
+}
+
+#highScoreList
+{
+    list-style: decimal;
+    list-style-position: inside;
+}
+
+#viewHighScoresButton, #returnToMenuButton
+{
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 0.25% 1% 0.25% 1%;
+    left: 20%;
+    bottom: 10%;
+
+    background-color: var(--blueColour);
+    color: #dddddd;
+    border-radius: var(--borderRadius);
+}
+
+#returnToMenuButton
+{
+    bottom: 16%;
+}
+
+#enterInitialsText
+{
+    padding: 0.25% 2% 0.25% 2%;
+    background-color: var(--blueColour);
+    color: #dddddd;
+    border: 0px;
+    border-radius: var(--borderRadius);
+}
