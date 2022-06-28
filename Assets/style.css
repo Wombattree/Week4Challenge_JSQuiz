@@ -2,6 +2,7 @@
 {
     --bodyColour: rgb(32, 32, 35);
     --blueColour: rgb(15, 59, 74);
+    --lightBlueColour: rgb(22, 89, 112);
 
     --textColour: #dddddd;
     --fadedTextColour: grey;
@@ -108,7 +109,6 @@ footer
 
 #viewHighScoresButton, #returnToMenuButton
 {
-    cursor: pointer;
     position: absolute;
     width: auto;
     padding: 0.25% 1% 0.25% 1%;
@@ -132,4 +132,10 @@ footer
     color: #dddddd;
     border: 0px;
     border-radius: var(--borderRadius);
+}
+
+li:hover, button:hover, #viewHighScoresButton:hover, #returnToMenuButton:hover, #enterInitialsText:hover
+{
+    cursor: pointer;
+    background-color: var(--lightBlueColour);
 }

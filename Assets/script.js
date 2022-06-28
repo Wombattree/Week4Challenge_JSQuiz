@@ -223,7 +223,7 @@ function CorrectAnswer()
 function IncorrectAnswer()
 {
     timeLeft -= 5;
-    quizResponseElement.textContent = "Wrong, the corrent answer to: " + "\"" + GetCurrentQuestionInfo("QuestionTitle") + "\"" + " is: " + "\"" + GetCurrentQuestionInfo("CorrectAnswer") + "\"";
+    quizResponseElement.textContent = "Wrong, the corrent answer to: " + "\"" + GetCurrentQuestionInfo("QuestionTitle") + "\"" + " is: " + "\"" + GetCurrentQuestionInfo("CorrectAnswer") + "\"" + ". You lose 5 seconds.";
     //If the game hasn't ended then get a new question
     if (UpdateCountdown()) GetNewQuestion();
 }
